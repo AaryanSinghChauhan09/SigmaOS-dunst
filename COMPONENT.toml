@@ -3,12 +3,12 @@ name = "SigmaOS-dunst"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "dunst component"
+description = "Dunst notification daemon for SigmaOS"
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
