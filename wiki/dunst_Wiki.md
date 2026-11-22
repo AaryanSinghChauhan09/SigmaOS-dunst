@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-dunst Component Wiki
+# SigmaOS-dunst Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-dunst provides Dunst notification daemon for SigmaOS for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-dunst provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-dunst Abstraction
-- Fail-Fast on SigmaOS-dunst Initialization Errors
-- Deterministic SigmaOS-dunst Setup
-- Clear Abstraction Over SigmaOS-dunst APIs
-- Composition over Inheritance for SigmaOS-dunst extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-dunst Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-dunst Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-dunst Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-dunst APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-dunst extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-dunst follows a SigmaOS-dunst pattern:
+SigmaOS-dunst follows a SigmaOS-dunst pattern:
 - **SigmaOS-dunst Core**: Provides SigmaOS-dunst support, SigmaOS-dunst management, and SigmaOS-dunst tracking
 - **Management**: Supports SigmaOS-dunst management, SigmaOS-dunst configuration, and SigmaOS-dunst lifecycle
 - **Tracking**: Supports SigmaOS-dunst status, SigmaOS-dunst tracking, and SigmaOS-dunst lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-dunst follows a SigmaOS-dunst pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-dunst by given configuration
--  - Register a SigmaOS-dunst by given name
--  - Get SigmaOS-dunst status and SigmaOS-dunst availability
--  - Track SigmaOS-dunst management and SigmaOS-dunst tracking
+- Manage a SigmaOS-dunst by given configuration
+- Register a SigmaOS-dunst by given name
+- Get SigmaOS-dunst status and SigmaOS-dunst availability
+- Track SigmaOS-dunst management and SigmaOS-dunst tracking
 - Error types for SigmaOS-dunst failure scenarios or unsupported SigmaOS-dunst types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-dunst init, SigmaOS-dunst management)
 3. **Assert**: Verify the expected SigmaOS-dunst results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-dunst initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-dunst failure scenarios
 - Unit tests provided for SigmaOS-dunst management and configuration
